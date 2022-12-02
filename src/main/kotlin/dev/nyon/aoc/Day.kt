@@ -3,7 +3,7 @@ package dev.nyon.aoc
 import kotlin.io.path.Path
 import kotlin.io.path.readText
 
-const val currentDay = 1
+const val currentDay = 2
 
 @Suppress("SENSELESS_COMPARISON")
 fun main() {
@@ -28,5 +28,6 @@ interface Day{
 
 fun getDayObject(inputString: String, inputLines: List<String>): Day = when (currentDay) {
     1 -> Day01(inputString, inputLines)
+    2 -> Day02(inputString, inputLines)
     else -> Day01(inputString, inputLines)
 }
