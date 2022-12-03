@@ -3,11 +3,11 @@ package dev.nyon.aoc
 import kotlin.io.path.Path
 import kotlin.io.path.readText
 
-const val currentDay = 2
+const val currentDay = 3
 
 @Suppress("SENSELESS_COMPARISON")
 fun main() {
-    val part = 1
+    val part = 2
 
     val dayText = Path("src/main/kotlin/dev/nyon/aoc/inputs", "Day$currentDay.txt").readText()
     getDayObject(dayText, dayText.lines()).also {
@@ -29,5 +29,6 @@ interface Day{
 fun getDayObject(inputString: String, inputLines: List<String>): Day = when (currentDay) {
     1 -> Day01(inputString, inputLines)
     2 -> Day02(inputString, inputLines)
+    3 -> Day03(inputString, inputLines)
     else -> Day01(inputString, inputLines)
 }
