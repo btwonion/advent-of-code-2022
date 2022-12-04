@@ -1,6 +1,6 @@
 package dev.nyon.aoc
 
-class Day03(override val inputString: String, override val inputLines: List<String>) : Day {
+class Day03(override val inputString: String, override val inputLines: Sequence<String>) : Day {
     private val alphabet = 'a'..'z'
 
     override fun firstPart(): Any {

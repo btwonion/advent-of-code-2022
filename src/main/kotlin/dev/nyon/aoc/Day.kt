@@ -20,15 +20,16 @@ fun main() {
 
 interface Day{
     val inputString: String
-    val inputLines: List<String>
+    val inputLines: Sequence<String>
 
     fun firstPart(): Any
     fun secondPart(): Any
 }
 
-fun getDayObject(inputString: String, inputLines: List<String>): Day = when (currentDay) {
+fun getDayObject(inputString: String, inputLines: Sequence<String>): Day = when (currentDay) {
     1 -> Day01(inputString, inputLines)
     2 -> Day02(inputString, inputLines)
     3 -> Day03(inputString, inputLines)
+    4 -> Day04(inputLines, inputString)
     else -> Day01(inputString, inputLines)
 }

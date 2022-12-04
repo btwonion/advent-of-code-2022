@@ -1,6 +1,6 @@
 package dev.nyon.aoc
 
-class Day02(override val inputString: String, override val inputLines: List<String>) : Day {
+class Day02(override val inputString: String, override val inputLines: Sequence<String>) : Day {
     private val matches = inputLines.map {
         val first = it[0]
         val second = it[2]

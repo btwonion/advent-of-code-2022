@@ -1,6 +1,6 @@
 package dev.nyon.aoc
 
-class Day01(override val inputString: String, override val inputLines: List<String>) : Day {
+class Day01(override val inputString: String, override val inputLines: Sequence<String>) : Day {
     private val summed = inputString.split("\n\n").map { s -> s.lines().sumOf { it.toInt() } }
     override fun firstPart(): Int = summed.max()
 
