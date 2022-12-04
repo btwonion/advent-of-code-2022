@@ -3,14 +3,14 @@ package dev.nyon.aoc
 import kotlin.io.path.Path
 import kotlin.io.path.readText
 
-const val currentDay = 3
+const val currentDay = 4
 
 @Suppress("SENSELESS_COMPARISON")
 fun main() {
     val part = 2
 
     val dayText = Path("src/main/kotlin/dev/nyon/aoc/inputs", "Day$currentDay.txt").readText()
-    getDayObject(dayText, dayText.lines()).also {
+    getDayObject(dayText, dayText.lines().asSequence()).also {
         println(
             if (part == 1) it.firstPart()
             else it.secondPart()
