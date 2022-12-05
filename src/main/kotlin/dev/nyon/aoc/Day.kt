@@ -3,7 +3,7 @@ package dev.nyon.aoc
 import kotlin.io.path.Path
 import kotlin.io.path.readText
 
-const val currentDay = 4
+const val currentDay = 5
 
 @Suppress("SENSELESS_COMPARISON")
 fun main() {
