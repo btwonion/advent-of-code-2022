@@ -1,6 +1,6 @@
 package dev.nyon.aoc
 
-class Day04(override val inputLines: Sequence<String>, override val inputString: String) : Day {
+class Day04(override val inputString: String, override val inputLines: Sequence<String>) : Day {
     private val pairs = inputLines.map {
         val split = it.split(",").map { part ->
             val ints = part.split("-")

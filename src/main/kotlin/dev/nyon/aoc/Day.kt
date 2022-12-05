@@ -30,6 +30,7 @@ fun getDayObject(inputString: String, inputLines: Sequence<String>): Day = when 
     1 -> Day01(inputString, inputLines)
     2 -> Day02(inputString, inputLines)
     3 -> Day03(inputString, inputLines)
-    4 -> Day04(inputLines, inputString)
+    4 -> Day04(inputString, inputLines)
+    5 -> Day05(inputString, inputLines)
     else -> Day01(inputString, inputLines)
 }
