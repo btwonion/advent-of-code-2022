@@ -1,11 +1,12 @@
+@file:Suppress("KotlinConstantConditions", "SENSELESS_COMPARISON")
+
 package dev.nyon.aoc
 
 import kotlin.io.path.Path
 import kotlin.io.path.readText
 
-const val currentDay = 5
+const val currentDay = 6
 
-@Suppress("SENSELESS_COMPARISON")
 fun main() {
     val part = 2
 
@@ -18,7 +19,7 @@ fun main() {
     }
 }
 
-interface Day{
+interface Day {
     val inputString: String
     val inputLines: Sequence<String>
 
@@ -32,5 +33,6 @@ fun getDayObject(inputString: String, inputLines: Sequence<String>): Day = when 
     3 -> Day03(inputString, inputLines)
     4 -> Day04(inputString, inputLines)
     5 -> Day05(inputString, inputLines)
+    6 -> Day06(inputString, inputLines)
     else -> Day01(inputString, inputLines)
 }
