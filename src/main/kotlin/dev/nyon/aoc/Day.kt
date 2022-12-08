@@ -5,7 +5,7 @@ package dev.nyon.aoc
 import kotlin.io.path.Path
 import kotlin.io.path.readText
 
-const val currentDay = 6
+const val currentDay = 8
 
 fun main() {
     val part = 2
@@ -34,5 +34,7 @@ fun getDayObject(inputString: String, inputLines: Sequence<String>): Day = when 
     4 -> Day04(inputString, inputLines)
     5 -> Day05(inputString, inputLines)
     6 -> Day06(inputString, inputLines)
+    7 -> Day07(inputString, inputLines)
+    8 -> Day08(inputString, inputLines)
     else -> Day01(inputString, inputLines)
 }
